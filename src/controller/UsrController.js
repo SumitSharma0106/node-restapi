@@ -9,4 +9,14 @@ const usr_all=async (req,res) =>{
     }
 };
 
-module.exports={usr_all}
+const usr_one=async (req,res) =>{
+    try{
+        const usr= await Usr.findById(req.params.usrId);
+        res.json(usr);
+    }catch(error){
+        console.log({message : error});
+    }
+}
+
+module.exports={usr_all
+,usr_one}

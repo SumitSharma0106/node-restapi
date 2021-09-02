@@ -3,7 +3,7 @@ const usrController=require("../controller/UsrController");
 
 router.post("/");
 router.get("/",usrController.usr_all);
-router.get("/:usrId");
+router.get("/:usrId",usrController.usr_one);
 router.put("/:usrId");
 router.delete("/:usrId");
 
