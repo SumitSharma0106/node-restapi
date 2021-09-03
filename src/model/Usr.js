@@ -12,6 +12,10 @@ const usrSchema=new mongoose.Schema({
     created_by:String,
     update_ts:String,
     modified_by:String    
+}, {
+
+    versionKey: false // You should be aware of the outcome after set to false
+
 });
 
 module.exports=mongoose.model("Usr",usrSchema);
