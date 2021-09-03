@@ -5,7 +5,7 @@ const usrController=require("../controller/UsrController");
 router.post("/",usrController.usr_add);
 router.get("/",usrController.usr_all);
 router.get("/:usrId",usrController.usr_one);
-router.put("/:usrId",usrController.usr_update);
+router.put("/:usrId");
 router.delete("/:usrId");
 
 module.exports=router;
